@@ -1,0 +1,33 @@
+@font-face{font-family: 'courgette';src:url('./fonts/');/*font pour les titres*/
+}
+@font-face{font-family: 'pangolin';src:url('./fonts/Pangolin-Regular.ttf');/*font pour les titres*/
+}
+
+.bare-tete{height: 120px;}
+.blob img{width: 220px;position:absolute;top:80px;margin-left: 30px;}.titre p{position:absolute;top:130px;margin-left:70px;font-family: 'pangolin';font-size:1.2rem;}
+.nom p{font-family: 'pangolin';font-size: 2rem;}.item a{font-family: 'pangolin';color:black; font-weight: bold;}
+.nav-item img{width: 50px;height: 100px;border-radius: 20px;}ul{display: flex;flex-direction: row;list-style-type: none;}
+h1{font-family: 'pangolin';font-size: 1.5rem;text-align: center;}.presentation{margin-top: 60px;}.presentation p{font-family: 'pangolin';text-align: center;font-size: 1.2em;}
+#productions{text-align: center;font-family: 'pangolin';margin-top: 60px;margin-bottom: 50px;color:rgb(92, 84, 84);font-weight: bold;font-size: 1.8rem;}
+#contact{background: url('./images/ImageFormulaire.png');text-align: center;padding-bottom: 30px;padding-top: 30px;}label{background-color: rgb(92, 84, 84);padding: 5px;}
+.formulaire h1{color:white;font-weight: bold;}fieldset{width: 100%}fieldset p, .information{color:white;font-weight: bold;font-size: 1.2em;}.information p{background: rgb(92, 84, 84);}
+input{border-radius: 10px;}
+
+@media all and (max-device-width:380px){
+    #nomarge{padding:0;margin:0;}
+    img.poupee{max-width: 370px;height: 150px;}.nom p{font-size: 1.5rem;}
+    .blob img{top:30px;width: 180px;}.titre p{top:60px;margin-left: 50px;}
+    img{width: 370px;}
+}
+@media all and (min-device-width:381px) and (max-device-width:540px){
+    #nomarge{padding:0;margin:0;}
+    img.poupee{max-width: 538px;height: 150px;}.nom p{font-size: 1.5rem;}
+    .blob img{top:30px;width: 180px;}.titre p{top:60px;margin-left: 50px;}
+    img{width: 370px;}
+}
+@media all and (max-device-width:1024px ){
+    #nomarge{padding:0;margin:0;}
+    img.poupee{height: 200px;width: 1022px;}.nom p{font-size: 1.5rem;}
+    .blob img{top:30px;width: 180px;}.titre p{top:60px;margin-left: 50px;}
+    img{width: 370px;}
+}

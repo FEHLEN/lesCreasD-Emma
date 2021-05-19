@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Boutique les Créas d'Emma</title>
+        <meta name="description" content="Maquette d'un futur site de création d'objets."/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <div class="container bar-tete">
+            <img class="poupee"src="images/Tete.png"/>
+            <div class="blob">
+                <img src="./images/image.png">
+            </div>
+            <div class="titre">
+                <p>Les Créas D'Emma</p>
+            </div>
+        </div>
+        <div class="container" id=" navigation">
+            <div class="row" id="bar-tete" >
+                <div class="col-4 col-lg-4 nom">
+                    <p>Emmanuelle<br> Duflot-Charre</p>
+                </div>
+                <div class="col-4 col-lg-8 item">
+                    <ul id="nomarge">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="/index.html"><img src="./images/IconeNav.png"/>Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#productions"><img src="./images/IconeNav2.png"/>Créations</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#contact"><img src="./images/IconeNav3.png"/>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container presentation">
+            <h1>Qui suis-je ?</h1>
+            <p>J'aime avoir un beau look, la mode est importante dans ma vie.</p>
+            <p>Une jeune femme créative, mes productions sont présentes dans ma boutique 6 rue du Mail à Brouage.</p>
+            <p>Le partage et la solidarité sont mes moteurs de création.</p>
+        </div>
+        <div class="container" id="productions">
+            <h1>Mes productions</h1>
+            <h2>Le porte cartes de visite</h2>
+            <img src="images/production.PNG"/>
+            <p>ET BIEN D'AUTRES ... Venez voir !</p>
+        </div>
+        <div class="container" id="contact">
+            <div class="form-group formulaire">
+                <h1>Formulaire de contact</h1>
+                <form method="POST" action="./traitement-formulaire.php"></form>
+                <fieldset><legend><p>Vos coordonnées</p></legend>
+                    <p><label for="nom">Nom :</label></p>
+                    <p><input type="text" name="nom" /></p>
+                    <p><label for="email">Email : </label></p>
+                    <p><input type="text" name="email" /></p>
+                </fieldset>
+                <fieldset><legend><p>Votre message</p></legend>
+                    <p><label for="objet">Objet : </label></p>
+                    <p><input type="text" name="objet" /></p>
+                    <p><label for="message">Message : </label></p>
+                    <p><textarea  name="message" cols="20" rows="8"></textarea></p>
+                </fieldset>
+                <div class="information"><p>En validant ce formulaire vous acceptez que votre adresse mail soit transmise afin de vous contacter.</p></div>
+                <div class="bouton3"><input id="bouton3" type="submit" name="envoi" value="Envoyer" /></div>
+            </form>
+            </div>
+        </div>
+    </body>
+    <div class="footer">
+        <p>© 2021 | WEBNELLDEV pour Les Créas D'Emma</p>
+    </div>
+
+</html>

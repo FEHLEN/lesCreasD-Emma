@@ -7,11 +7,35 @@
         <title>Boutique les Créas d'Emma</title>
         <meta name="description" content="Maquette d'un futur site de création d'objets."/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     </head>
     <body>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="true"></script>
+        <script>//Bande d'annonce de cookies
+            window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                "background": "#eaf7f7",
+                "text": "#5c7291"
+                },
+                "button": {
+                "background": "#642f64",
+                "text": "#ffffff"
+                }
+            },
+            "showLink": false,
+            "position": "bottom",
+            
+            "content": {
+            "message": "Les cookies sont nécessaires à la navigation entre les pages, j'utilise Bootstap. Cette maquette est entrièrement codée par mes soins.\n",
+            "dismiss": "J'ai compris"
+            }
+            
+            });
+            </script>
         <div class="container bar-tete">
             <img class="bandeau" src="images/bandeau.jpg"/>
             <div class="blob">
@@ -27,23 +51,31 @@
                 <div class="col-4 col-lg-4 nom">
                     <p>Emmanuelle<br> Duflot-Charre</p>
                 </div>
-                <div class="col-4 col-lg-8 item">
-                    <ul id="nomarge">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html"><img src="./images/puce.png"/>Accueil</a>
-                        </li>
-                        <li class="dropdown nav-item ">
-                            <a id="produits" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="./images/puce2.png"/>Créations</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#Ustensiles">Ustensiles</a>
-                                <a class="dropdown-item" href="#Contenants">Contenants</a>
-                                <a class="dropdown-item" href="#Couverts">Couverts</a>
-                                <a class="dropdown-item" href="#Motifs">Motifs</a>
-                            </div>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#contact"><img src="./images/puce3.png"/>Contact</a>
-                        </li>
-                    </ul>
+                <div class="col-8 col-lg-8 item">
+                    <nav class="col nav navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">  
+                            <img src="./images/iconeMenu.svg" alt="image de burger menu, plusieurs traits horizontaux noirs" width="100px" height="100px"/>  
+                        </button>
+                        <div id="navbarContent" class="collapse navbar-collapse">
+                            <ul class="navbar-nav" id="nomarge">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html"><img src="./images/puce.png"/><br>Accueil</a>
+                                </li>
+                                <li class="dropdown nav-item ">
+                                    <a id="produits" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="./images/puce2.png"/><br>Créations</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#Ustensiles">Ustensiles</a>
+                                        <a class="dropdown-item" href="#Contenants">Contenants</a>
+                                        <a class="dropdown-item" href="#Couverts">Couverts</a>
+                                        <a class="dropdown-item" href="#Motifs">Motifs</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#contact"><img src="./images/puce3.png"/><br>Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -154,7 +186,7 @@
                         <p><label for="objet">Objet : </label></p>
                         <p><input type="text" name="objet" /></p>
                         <p><label for="message">Message : </label></p>
-                        <p><textarea  name="message" cols="20" rows="8"></textarea></p>
+                        <p><textarea  name="message" cols="18" rows="6"></textarea></p>
                     </fieldset>
                     <div class="information"><p>En validant ce formulaire vous acceptez que votre adresse mail soit transmise afin de vous contacter.</p></div>
                     <div class="bouton3"><input id="bouton3" type="submit" name="envoi" value="Envoyer" /></div>

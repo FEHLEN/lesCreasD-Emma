@@ -7,7 +7,6 @@
 .blob img{width: 220px;}
 .titre p{z-index:3;position:absolute;top:80px;margin-left:70px;font-family: 'pangolin';font-size:1.2rem;}
 #navigation{height: 150px;}
-
 .nom p{font-family: 'pangolin';font-size: 2rem;}.nav-item a{font-family: 'pangolin';color:black; font-weight: bold;}
 .nav-item img{width: 50px;height: 50px;border-radius: 20px;}ul{display: flex;flex-direction: row;list-style-type: none;}
 h1{font-family: 'pangolin';font-size: 1.5rem;text-align: center;}#presentation{margin-top: 10px;}#presentation p{z-index:2;font-family: 'pangolin';text-align: center;font-size: 1.5em;font-weight: bold;}
@@ -39,7 +38,11 @@ input{border-radius: 10px;}
 @media all and (max-device-width:380px){
     #nomarge{padding:0;margin:0;}
     .blob img{top:30px;width: 180px;}.titre p{top:60px;margin-left: 50px;}
-    img{width: 370px;}
+    #navigation{height: 350px;}
+    .nom{font-size: 0.8rem;}
+    img{max-width: 280px;}
+    #hero video{width: 340px;margin-left: 0px;}
+    #fond.form-groupe.formulaire{width: 100%;}input{max-width: 80%;}.textarea{max-width: 370px;}.salade img, .menagere img, .bandeau{max-width: 378px;}
 }
 @media all and (min-device-width:381px) and (max-device-width:540px){
     #nomarge{padding:0;margin:0;}

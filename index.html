@@ -13,15 +13,16 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <div class="container bar-tete">
-            <img class="poupee"src="images/Tete.png"/>
+            <img class="bandeau" src="images/bandeau.jpg"/>
             <div class="blob">
-                <img src="./images/image.png">
+                <img src="./images/image2.png">
             </div>
             <div class="titre">
                 <p>Les Créas D'Emma</p>
             </div>
         </div>
-        <div class="container" id=" navigation">
+
+        <div class="container" id="navigation">
             <div class="row" id="bar-tete" >
                 <div class="col-4 col-lg-4 nom">
                     <p>Emmanuelle<br> Duflot-Charre</p>
@@ -29,51 +30,138 @@
                 <div class="col-4 col-lg-8 item">
                     <ul id="nomarge">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="/index.html"><img src="./images/IconeNav.png"/>Accueil</a>
+                          <a class="nav-link active" aria-current="page" href="index.html"><img src="./images/puce.png"/>Accueil</a>
                         </li>
+                        <li class="dropdown nav-item ">
+                            <a id="produits" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="./images/puce2.png"/>Créations</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#Ustensiles">Ustensiles</a>
+                                <a class="dropdown-item" href="#Contenants">Contenants</a>
+                                <a class="dropdown-item" href="#Couverts">Couverts</a>
+                                <a class="dropdown-item" href="#Motifs">Motifs</a>
+                            </div>
                         <li class="nav-item">
-                          <a class="nav-link" href="#productions"><img src="./images/IconeNav2.png"/>Créations</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#contact"><img src="./images/IconeNav3.png"/>Contact</a>
+                          <a class="nav-link" href="#contact"><img src="./images/puce3.png"/>Contact</a>
                         </li>
                     </ul>
                 </div>
-                
             </div>
         </div>
-        <div class="container presentation">
-            <h1>Qui suis-je ?</h1>
-            <p>J'aime avoir un beau look, la mode est importante dans ma vie.</p>
-            <p>Une jeune femme créative, mes productions sont présentes dans ma boutique 6 rue du Mail à Brouage.</p>
-            <p>Le partage et la solidarité sont mes moteurs de création.</p>
+        <div class="container" id="presentation">
+            <h1>La fabrication</h1>
+            <p>Les Créas d'Emma<br>
+                <span>Fabrication Artisanale.</span>Toutes mes réalisations sont conçues et fabriquées par mes soins.</p>
+            <p>Vous connaissez très certainement la pâte polymère régulièrement utilisée pour fabriquer des bijoux. Vous allez la découvrir ici sous un aspect original :<br>
+                l’art de la table !</p>
+                <p>Du pic apéritif à la ménagère complète, en passant par la cuillère à pamplemousse, la cuillère à melon, les cuillères à expresso, les presses purée et même le relooking de services argentés anciens.
+                        Pensez également à la customisation de vos propres ménagères en donnant une deuxième vie à votre ancienne argenterie par exemple.
+                        N’hésitez pas à mettre de la couleur sur votre table, dans votre cuisine ou encore, offrir un cadeau unique.</p>
+                 <p>"Tout le charme de mon travail réside dans le fait qu’il n’y a pas deux modèles strictement identiques. Vous aurez donc votre motif, spécialement fait pour vous."<br>
+                            - EMMA</p>
+                <p>Exposition et vente au magasin de Créateurs : AZ'ART - 6 rue du Mail - 17320 BROUAGE</p>
+                <a class="monter" href="#bar-tete"><div class="ascenseur">^</div></a>
+            <img class="deco" src="./images/menagere1.jpg"/>
         </div>
+       
         <div class="container" id="productions">
             <h1>Mes productions</h1>
-            <h2>Le porte cartes de visite</h2>
-            <img src="images/production.PNG"/>
-            <p>ET BIEN D'AUTRES ... Venez voir !</p>
+            <p> Atelier : 11B rue des Fourneaux 17600 SABLONCEAUX</p>
+            <h2 id="Ustensiles">Les ustensiles de cuisine</h2>
+            <p>Quelques exemples ...</p>
+            <div class="col-12 col-lg-12" id="hero"><!--vidéo de présentation-->
+                <video  height="300" autoplay muted loop>
+                  <source src="./VideoUstensiles.mp4" type="video/mp4">
+                </video>
+                <p>Les Créas d'Emma</p>
+            </div>
+            <a class="monter" href="#bar-tete"><div class="ascenseur2">^</div></a>
+            <h2 id="Contenants">Les contenants</h2>
+            <p>Verre, tasse, bol à soupe, mug ...</p>
+            <div class="col-12 col-lg-12" id="hero"><!--vidéo de présentation-->
+                <video  height="300" autoplay muted loop>
+                  <source src="./Videocontenants.mp4" type="video/mp4">
+                </video>
+                <p>Les Créas d'Emma</p>
+            </div>
+            <h2 id="Couverts">Les couverts</h2>
+                <img class="salade" src="./images/salade.jpg"/>
+                <p>Couverts à salade</p><br>
+                <img class="menagere" src="./images/menagere2.jpg"/>
+                <p>Ménagère</p><br>
+                <img class="rénovation" src="./images/couvertsBleu.jpg"/>
+                <p>Rénovation de vos anciens couverts</p>
+                <a class="monter" href="#bar-tete"><div class="ascenseur3">^</div></a>
+            <h2 id="Motifs">Les Motifs</h2>
+            <p>Catalogue des motifs</p>
+            <ul class="listeCouleur">
+                <li class="btn"><a class="bleu"href="#bleu">Bleu</a></li>
+                <li class="btn"><a class="vert" href="#vert">Vert</a></li>
+                <li class="btn"><a class="jaune" href="#jaune">Jaune</a></li>
+                <li class="btn"><a class="rouge" href="#rouge">Rouge</a></li>
+                <li class="btn"><a class="maron" href="#maron">Marron</a></li>
+                <li class="btn"><a class="rose" href="#rose">Rose/violet</a></li>
+                <li class="btn"><a class="orange" href="#orange">Orange</a></li>
+                <li class="btn"><a class="noir" href="#noir">Noir/blanc</a></li>
+                <li class="btn"><a class="multi" href="#multi">Multicolor</a></li>
+            </ul>
+            <p>Quelques exemples, il y en a beaucoup d'autres dans le catalogue.</p>
+            <div id="bleu"><p>Les Bleus</p></div>
+            <img class="imgBleu" src="./images/MotifBleu1.PNG"/><br>
+            <img class="imgBleu" src="images/MotifBleu2.PNG"/><br>
+            <div id="vert"><p>Les Verts</p></div>
+            <img class="imgVert" src="./images/MotifVert1.PNG"/><br>
+            <img class="imgVert" src="./images/MotifVert2.PNG"/><br>
+            <div id="jaune"><p>Les Jaunes</p></div>
+            <img class="imgJaune" src="./images/MotifJaune1.PNG"/><br>
+            <img class="imgJaune" src="./images/MotifJaune2.PNG"/><br>
+            <a class="monter" href="#Motifs"><div class="ascenseur4">^</div></a>
+            <div id="rouge"><p>Les Rouges</p></div>
+            <img class="imgRouge" src="./images/MotifRouge1.PNG"/><br>
+            <img class="imgRouge" src="./images/MotifRouge2.PNG"/><br>
+            <div id="maron"><p>Les Marrons</p></div>
+            <img class="imgMaron" src="./images/MotifMarron1.PNG"/><br>
+            <img class="imgMaron" src="./images/MotifMarron2.PNG"/><br>
+            <div id="rose"><p>Les Roses et les Violets</p></div>
+            <img class="imgRose" src="./images/MotifRoseViolet1.PNG"/><br>
+            <img class="imgRose" src="./images/MotifRoseViolet2.PNG"/><br>
+            <a class="monter" href="#Motifs"><div class="ascenseur5">^</div></a>
+            <div id="orange"><p>Les Oranges</p></div>
+            <img class="imgOrange" src="./images/MotifOrange1.PNG"/><br>
+            <img class="imgOrange" src="./images/MotifOrange2.PNG"/><br>
+            <div id="noir"><p>Les Noirs et Blancs</p></div>
+            <img class="imgNoir" src="./images/MotifNoirBlanc1.PNG"/><br>
+            <img class="imgNoir" src="./images/MotifNoirBlanc2.PNG"/><br>
+            <div id="multi"><p>Les multi-couleurs</p></div>
+            <img class="imgMulti" src="./images/MotifMulticolor1.PNG"/><br>
+            <img class="imgMulti" src="./images/MotifMulticolor2.PNG"/><br>
+            <a class="monter" href="#Motifs"><div class="ascenseur6">^</div></a>
         </div>
         <div class="container" id="contact">
-            <div class="form-group formulaire">
+            <h2>Le porte cartes de visite</h2>
+            <p>Ma page facebook : <a class="bouton" href="https://www.facebook.com/Emmacreas" target="_blank"><span>I</span>ci !</a></p><br>
+            <img src="images/production.PNG"/>
+            <p>ET BIEN D'AUTRES ... Venez voir !</p>
+            <div class="form-group formulaire" id="fond">
                 <h1>Formulaire de contact</h1>
-                <form method="POST" action="./traitement-formulaire.php"></form>
-                <fieldset><legend><p>Vos coordonnées</p></legend>
-                    <p><label for="nom">Nom :</label></p>
-                    <p><input type="text" name="nom" /></p>
-                    <p><label for="email">Email : </label></p>
-                    <p><input type="text" name="email" /></p>
-                </fieldset>
-                <fieldset><legend><p>Votre message</p></legend>
-                    <p><label for="objet">Objet : </label></p>
-                    <p><input type="text" name="objet" /></p>
-                    <p><label for="message">Message : </label></p>
-                    <p><textarea  name="message" cols="20" rows="8"></textarea></p>
-                </fieldset>
-                <div class="information"><p>En validant ce formulaire vous acceptez que votre adresse mail soit transmise afin de vous contacter.</p></div>
-                <div class="bouton3"><input id="bouton3" type="submit" name="envoi" value="Envoyer" /></div>
-            </form>
+                <form method="POST" action="./traitement-formulaire.php">
+                    <fieldset><legend><p>Vos coordonnées</p></legend>
+                        <p><label for="nom">Nom :</label></p>
+                        <p><input type="text" name="nom" /></p>
+                        <p><label for="email">Email : </label></p>
+                        <p><input type="text" name="email" /></p>
+                    </fieldset>
+                    <fieldset><legend><p>Votre message</p></legend>
+                        <p><label for="objet">Objet : </label></p>
+                        <p><input type="text" name="objet" /></p>
+                        <p><label for="message">Message : </label></p>
+                        <p><textarea  name="message" cols="20" rows="8"></textarea></p>
+                    </fieldset>
+                    <div class="information"><p>En validant ce formulaire vous acceptez que votre adresse mail soit transmise afin de vous contacter.</p></div>
+                    <div class="bouton3"><input id="bouton3" type="submit" name="envoi" value="Envoyer" /></div>
+                </form>
             </div>
+        
+        <a class="monter" href="#bar-tete"><div class="ascenseur4">^</div></a>
         </div>
     </body>
     <div class="footer">

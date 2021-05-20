@@ -2,32 +2,52 @@
 }
 @font-face{font-family: 'pangolin';src:url('./fonts/Pangolin-Regular.ttf');/*font pour les titres*/
 }
+#bar-tete{height: 300px;}.bandeau{width: 100%;background-size: cover;z-index:1;}
+.blob{z-index:2;position:absolute;top:30px;margin-left: 30px;}
+.blob img{width: 220px;}
+.titre p{z-index:3;position:absolute;top:80px;margin-left:70px;font-family: 'pangolin';font-size:1.2rem;}
+#navigation{height: 150px;}
 
-.bare-tete{height: 120px;}
-.blob img{width: 220px;position:absolute;top:80px;margin-left: 30px;}.titre p{position:absolute;top:130px;margin-left:70px;font-family: 'pangolin';font-size:1.2rem;}
-.nom p{font-family: 'pangolin';font-size: 2rem;}.item a{font-family: 'pangolin';color:black; font-weight: bold;}
-.nav-item img{width: 50px;height: 100px;border-radius: 20px;}ul{display: flex;flex-direction: row;list-style-type: none;}
-h1{font-family: 'pangolin';font-size: 1.5rem;text-align: center;}.presentation{margin-top: 60px;}.presentation p{font-family: 'pangolin';text-align: center;font-size: 1.2em;}
-#productions{text-align: center;font-family: 'pangolin';margin-top: 60px;margin-bottom: 50px;color:rgb(92, 84, 84);font-weight: bold;font-size: 1.8rem;}
-#contact{background: url('./images/ImageFormulaire.png');text-align: center;padding-bottom: 30px;padding-top: 30px;}label{background-color: rgb(92, 84, 84);padding: 5px;}
-.formulaire h1{color:white;font-weight: bold;}fieldset{width: 100%}fieldset p, .information{color:white;font-weight: bold;font-size: 1.2em;}.information p{background: rgb(92, 84, 84);}
+.nom p{font-family: 'pangolin';font-size: 2rem;}.nav-item a{font-family: 'pangolin';color:black; font-weight: bold;}
+.nav-item img{width: 50px;height: 50px;border-radius: 20px;}ul{display: flex;flex-direction: row;list-style-type: none;}
+h1{font-family: 'pangolin';font-size: 1.5rem;text-align: center;}#presentation{margin-top: 10px;}#presentation p{z-index:2;font-family: 'pangolin';text-align: center;font-size: 1.5em;font-weight: bold;}
+.ascenseur{width: 40px;height: 40px ;font-size: 2rem;font-weight: bold;color:white;background: url('./images/PuceBleu67.png');text-align: center;z-index:2;}
+.ascenseur2{width: 40px;height: 40px ;font-size: 2rem;font-weight: bold;color:white;background: url('./images/PuceRouge67.png');text-align: center;z-index:2;}
+.ascenseur3{width: 40px;height: 40px ;font-size: 2rem;font-weight: bold;color:white;background: url('./images/PuceOrange67.png');text-align: center;z-index:2;}
+.ascenseur4{width: 40px;height: 40px ;font-size: 2rem;font-weight: bold;color:white;background: url('./images/PuceRouge67.png');text-align: center;z-index:2;}
+.ascenseur5{width: 40px;height: 40px ;font-size: 2rem;font-weight: bold;color:white;background: url('./images/PuceRose67.png');text-align: center;z-index:2;}
+.ascenseur6{width: 40px;height: 40px ;font-size: 2rem;font-weight: bold;color:white;background: url('./images/PuceNoir67.png');text-align: center;z-index:2;}
+#productions{text-align: center;font-family: 'pangolin';margin-top: 90px;margin-bottom: 50px;color:rgb(92, 84, 84);font-weight: bold;font-size: 1.8rem;}
+.deco{transform: rotate(45deg);z-index: 1;opacity:0.5;position:absolute;top:900px;}
+.salade, .menagere{width: 400px;}.bouton{color:rgb(255, 113, 47);}span{color:rgb(55, 63, 90);font-size: 1.5em;}
+.listeCouleur{display:flex;flex-wrap: wrap;}.btn{width: 120px;margin-bottom: 20px;}
+.bleu{background-image: url('./images/PuceBleu67.png');color:white;padding: 10px 30px 10px 30px;}
+.rouge{background-image: url('./images/PuceRouge67.png');color:white;padding:10px 25px 10px 25px;margin-left: 5px;}
+.jaune{background-image: url('./images/PuceJaunet67.png');color:white;padding:10px 25px 10px 25px;margin-left: 5px;}
+.vert{background-image: url('./images/PuceVert67.png');color:white;padding:10px 25px 10px 25px;margin-left: 5px;}
+.maron{background-image: url('./images/PuceMaron67.png');color:white;padding:10px 25px 10px 25px;margin-left: 5px;}
+.rose{background-image: url('./images/PuceRose67.png');color:white;padding:10px 15px 10px 15px;margin-left: 5px;}
+.orange{background-image: url('./images/PuceOrange67.png');color:white;padding:10px 25px 10px 25px;margin-left: 5px;}
+.noir{background-image: url('./images/PuceNoir67.png');color:white;padding:10px 25px 10px 25px;margin-left: 5px;}
+.multi{background-image: url('./images/PuceMulti67.png');color:white;padding:10px 25px 10px 25px;margin-left: 5px;}
+#fond{background: url('./images/ImageFormulaire.png');opacity:0.5;}
+#contact{text-align: center;padding-bottom: 30px;padding-top: 30px;font-family: 'pangolin';color:rgb(92, 84, 84);font-weight: bold;font-size: 1.8rem;}
+label{background-color: rgb(92, 84, 84);padding: 5px;}
+.formulaire h1{color:rgb(126, 14, 14);font-weight: bold;}fieldset{width: 100%}fieldset p, .information{color:white;font-weight: bold;font-size: 1.2em;}.information p{background: rgb(92, 84, 84);}
 input{border-radius: 10px;}
 
 @media all and (max-device-width:380px){
     #nomarge{padding:0;margin:0;}
-    img.poupee{max-width: 370px;height: 150px;}.nom p{font-size: 1.5rem;}
     .blob img{top:30px;width: 180px;}.titre p{top:60px;margin-left: 50px;}
     img{width: 370px;}
 }
 @media all and (min-device-width:381px) and (max-device-width:540px){
     #nomarge{padding:0;margin:0;}
-    img.poupee{max-width: 538px;height: 150px;}.nom p{font-size: 1.5rem;}
     .blob img{top:30px;width: 180px;}.titre p{top:60px;margin-left: 50px;}
     img{width: 370px;}
 }
 @media all and (max-device-width:1024px ){
     #nomarge{padding:0;margin:0;}
-    img.poupee{height: 200px;width: 1022px;}.nom p{font-size: 1.5rem;}
     .blob img{top:30px;width: 180px;}.titre p{top:60px;margin-left: 50px;}
     img{width: 370px;}
 }
